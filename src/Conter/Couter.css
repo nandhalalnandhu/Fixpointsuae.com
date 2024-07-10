@@ -1,0 +1,111 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  } */
+
+  
+  .mainu {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+ 
+  .wrapper-div {
+    /* position: absolute; */
+    width: 90vw;
+    /* transform: translate(-50%, -50%); */
+    /* top: 50%;
+    left: 50%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    /* background-color: #00e6fb; */
+  }
+  .container-div {
+    width: 40vmin;
+    height: 30vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color:rgb(255, 255, 255);
+    /* border-bottom: 3px solid red; */
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px; */
+   
+  }
+  .pre-icon{
+    color:rgb(0, 0, 0);
+    font-size: 2.5em;
+    text-align: center;
+  }
+  span.num {
+    color: #df1414;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  span.text {
+    color: rgb(17, 17, 17);
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 800;
+    line-height: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    .wrapper-div {
+      width: 85vw;
+    }
+    .container-div {
+      height: 26vmin;
+      width: 26vmin;
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .wrapper-div {
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .container-div {
+      width: calc(55% - 40px);
+      height: 30vmin;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .wrapper-div {
+      gap: 15px;
+    }
+    .container-div {
+      width: 60%;
+      height: 30vmin;
+      font-size: 8px;
+    }
+    span.num{
+      font-size: 35px;
+    }
+    .pre-icon{
+      color:rgb(0, 0, 0);
+      font-size: 30px;
+      text-align: center;
+    }
+    span.text{
+      font-size: 15px;
+    }
+ 
+  }

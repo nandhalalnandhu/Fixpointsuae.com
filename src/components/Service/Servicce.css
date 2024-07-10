@@ -1,0 +1,134 @@
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+#maix {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: rgb(247,249,253);
+    padding: 5px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+.cardn {
+    position: relative;
+    display: block;
+    height: 90%;
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+    /* background-color: rgb(21, 69, 165); */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+}
+
+.card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: calc(var(--curve) * 1px);
+    background-color: var(--surface-color);
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+}
+
+.cardn:hover .card__overlay {
+    transform: translateY(0);
+}
+
+.card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+}
+
+.card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+}
+
+.card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.cardn:hover .card__header {
+    transform: translateY(0);
+}
+
+.card__thumb {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #000000;
+    font-weight: 800;
+}
+
+.card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";
+    font-size: .8em;
+    color: #D7BDCA;
+}
+
+.card__status {
+    font-size: .8em;
+    color: #a29ea0;
+}
+
+.butu {
+    border: none;
+    color:white;
+    border-radius: 5px;
+    background-color: red;
+    padding: 5px;
+    /* font-family: "MockFlowFont"; */
+}
+
+.card__description {
+    text-align: center;
+    padding: 0 2em 3.5em;
+    margin: 0;
+    color: #3e3b3d;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}

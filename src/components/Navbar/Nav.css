@@ -1,0 +1,65 @@
+.nav-top-icons{
+  color: red;
+ z-index: 89765432;
+}
+
+#navtop{
+  background-color:transparent;
+  
+  z-index: 100;
+}
+small{
+  cursor: pointer;
+}
+.btn-primary{
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-primary:hover{
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.btn-primary:focus{
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.offcanvas-body{
+  /* background-color: rgb(238, 56, 6); */
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ height: auto;
+
+}
+.off-body-a{
+  color: aliceblue;
+  /* background-color: azure; */
+  height: 20px;
+  text-align: center;
+ 
+}
+
+/* #bi bi-list mobile-nav-toggle{
+  display: none;
+} */
+
+/* @media  only screen and (min-width:300px)and(max-width:900px) {
+  #offf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+} */
+
+
+
+
+
+
+
+
